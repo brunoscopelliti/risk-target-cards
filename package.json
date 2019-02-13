@@ -1,0 +1,24 @@
+{
+  "name": "risk-target-cards",
+  "version": "0.1.0",
+  "description": "Risk target cards",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/risk-target-cards.git"
+  },
+  "keywords": [
+    "risk",
+    "risk target",
+    "risk cards",
+    "risiko",
+    "risiko cards",
+    "risiko target"
+  ],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/risk-target-cards/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/risk-target-cards#readme"
+}
