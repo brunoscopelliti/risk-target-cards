@@ -17,7 +17,10 @@ A card is like
   type: "destroy",
   army: "black",
   fallback: {
+    type: "regions",
     regions: 24,
+    tankPerRegion: 1,
+    tournament: false,
   },
   tournament: false,
 }
@@ -31,7 +34,7 @@ Card's fields change on the basis of the card's type. Other examples:
 
 ```js
 {
-  type: "destroy",
+  type: "conqueer",
   continents: ["asia", "south-america"],
   extra: false
   tournament: false,

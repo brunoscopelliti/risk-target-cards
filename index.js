@@ -2,9 +2,7 @@ function army (targetArmy) {
   return {
     type: "destroy",
     army: targetArmy,
-    fallback: {
-      regions: 24,
-    },
+    fallback: regions(24, 1),
     tournament: false,
   };
 };
@@ -43,5 +41,5 @@ module.exports = [
   conqueer(["north-america", "oceania"]),
 
   regions(18, 2),
-  regions(24),
+  regions(24, 1),
 ];
