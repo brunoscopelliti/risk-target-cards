@@ -15,6 +15,7 @@ A card is like
 ```js
 {
   type: "destroy",
+  plainText: "Destroy the Black army. If you're the Black army, or Black army are eliminated by someone else your objective becomes conqueer 24 territories",
   army: "black",
   fallback: {
     type: "regions",
@@ -35,6 +36,7 @@ Card's fields change on the basis of the card's type. Other examples:
 ```js
 {
   type: "conqueer",
+  plainText: "Conqueer the totality of Asia and South America",
   continents: ["asia", "south-america"],
   extra: false
   tournament: false,
@@ -46,6 +48,7 @@ Card's fields change on the basis of the card's type. Other examples:
 ```js
 {
   type: "regions",
+  plaintText: "Hold 18 territories with at least 2 tanks on each territory",
   regions: 18,
   tankPerRegion: 2,
   tournament: false,
