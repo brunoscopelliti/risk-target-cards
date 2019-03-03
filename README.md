@@ -15,7 +15,7 @@ A card is like
 ```js
 {
   type: "destroy",
-  plainText: "Destroy the Black army. If you're the Black army, or Black army are eliminated by someone else your objective becomes conqueer 24 territories",
+  plainText: "Destroy the Black army. If you are the Black army, or Black army are eliminated by someone else your objective becomes conqueer 24 territories",
   army: "black",
   fallback: {
     type: "regions",

@@ -11,7 +11,7 @@ function army (targetArmy) {
   var army = friendlyName(targetArmy);
   return {
     type: "destroy",
-    plainText: `Destroy the ${army} army. If you're the ${army} army, or ${army} army are eliminated by someone else your objective becomes conqueer 24 territories`,
+    plainText: `Destroy the ${army} army. If you are the ${army} army, or ${army} army are eliminated by someone else your objective becomes conqueer 24 territories`,
     army: targetArmy,
     fallback: regions(24, 1),
     tournament: false,
