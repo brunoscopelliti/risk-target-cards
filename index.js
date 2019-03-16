@@ -56,19 +56,17 @@ function conqueer (continents, extra) {
 
 module.exports = [
   army("black"),
+  regions(18, 2),
   army("blue"),
-  army("green"),
-  army("red"),
-  army("violet"),
-  army("yellow"),
-
   conqueer(["asia", "africa"]),
+  regions(24, 1),
   conqueer(["asia", "south-america"]),
+  army("green"),
   conqueer(["europe", "oceania"], true),
   conqueer(["europe", "south-america"], true),
+  army("red"),
   conqueer(["north-america", "africa"]),
+  army("violet"),
   conqueer(["north-america", "oceania"]),
-
-  regions(18, 2),
-  regions(24, 1),
+  army("yellow"),
 ];
