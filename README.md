@@ -27,7 +27,7 @@ A card is like
 }
 ```
 
-Possible card's types: `destroy`, `regions`, and `conqueer`.
+Possible card's types: `destroy`, `regions`, `conqueer`, and `tournament`.
 
 Card's fields change on the basis of the card's type. Other examples:
 
@@ -52,5 +52,16 @@ Card's fields change on the basis of the card's type. Other examples:
   regions: 18,
   tankPerRegion: 2,
   tournament: false,
+}
+```
+
+* Tournament
+
+```js
+{
+  type: "tournament",
+  countries: ["congo", ...],
+  plainText: "Conqueer the following countries: Congo, ...",
+  tournament: true
 }
 ```
