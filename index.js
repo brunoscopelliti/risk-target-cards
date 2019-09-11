@@ -13,7 +13,7 @@ function army (targetArmy) {
   var army = friendlyName(targetArmy);
   return {
     type: "destroy",
-    plainText: `Destroy the ${army} army. If you are the ${army} army, or ${army} army are eliminated by someone else your objective becomes conqueer 24 territories`,
+    plainText: `Destroy the ${army} army. If you are the ${army} army, or ${army} army are eliminated by someone else your objective becomes conquer 24 territories`,
     army: targetArmy,
     fallback: regions(24, 1),
     tournament: false,
@@ -36,8 +36,8 @@ function regions (quantity, tankPerRegion) {
   };
 };
 
-function conqueer (continents, extra) {
-  var text = `Conqueer the totality of `;
+function conquer (continents, extra) {
+  var text = `Conquer the totality of `;
   var first = friendlyName(continents[0]);
   var second = friendlyName(continents[1]);
 
@@ -48,7 +48,7 @@ function conqueer (continents, extra) {
   }
 
   return {
-    type: "conqueer",
+    type: "conquer",
     plainText: text,
     continents,
     extra,
@@ -60,16 +60,16 @@ const objectives = [
   army("black"),
   regions(18, 2),
   army("blue"),
-  conqueer(["asia", "africa"]),
+  conquer(["asia", "africa"]),
   regions(24, 1),
-  conqueer(["asia", "south-america"]),
+  conquer(["asia", "south-america"]),
   army("green"),
-  conqueer(["europe", "oceania"], true),
-  conqueer(["europe", "south-america"], true),
+  conquer(["europe", "oceania"], true),
+  conquer(["europe", "south-america"], true),
   army("red"),
-  conqueer(["north-america", "africa"]),
+  conquer(["north-america", "africa"]),
   army("violet"),
-  conqueer(["north-america", "oceania"]),
+  conquer(["north-america", "oceania"]),
   army("yellow"),
 ];
 
@@ -77,7 +77,7 @@ function countries (list) {
   return {
     type: "tournament",
     countries: list,
-    plainText: `Conqueer the following countries: ${list.map(friendlyName).join(", ")}.`,
+    plainText: `Conquer the following countries: ${list.map(friendlyName).join(", ")}.`,
     tournament: true,
   };
 }
